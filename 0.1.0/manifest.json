@@ -1,0 +1,25 @@
+{
+   "author": "LAI VAN HAI",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "data/icons/logo.png"
+      },
+      "default_popup": "data/popup/index.html"
+   },
+   "description": "NetProtectionsのWireless Projector PJT",
+   "homepage_url": "https://corp.netprotections.com/company",
+   "icons": {
+      "128": "data/icons/logo.png",
+      "16": "data/icons/logo.png",
+      "48": "data/icons/logo.png"
+   },
+   "manifest_version": 2,
+   "name": "Wireless Projector",
+   "permissions": [ "storage", "management", "notifications", "contextMenus", "chrome://favicon/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.0"
+}
