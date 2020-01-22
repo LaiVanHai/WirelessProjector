@@ -5,28 +5,69 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div class="display-hide">
-      <div class="grid-item" data-cmd="open-app">
-        <div class="rtl">
-          <input type="button" data-cmd="open-settings">
-          <input type="button" data-cmd="open-home">
+    <div class="container">
+      <h1>Wireless Projector</h1>
+
+      <div class="tabs">
+        <div class="tabby-tab">
+          <input type="radio" id="tab-1" name="tabby-tabs" checked>
+          <label for="tab-1">メイン</label>
+          <div class="tabby-content">
+            <div class="display-hide">
+              <div class="grid-item" data-cmd="open-app">
+                <div class="rtl">
+                  <input type="button" data-cmd="open-home">
+                </div>
+                <div class="spacer"></div>
+                <div class="title"></div>
+              </div>
+            </div>
+            <div class="grid">
+              <div id="no-all-app" class="warning">
+                <i class="fa fa-times-circle"></i>
+                Wireless Projectorを利用するように、下記の拡張をインストールしてください！
+              </div>
+            </div>
+            <ul>
+              <li id="no-4k-app" class="display-hide mar_bottom" >
+                <a target="_blank" href="https://chrome.google.com/webstore/detail/ezcast/almaoeocffonpjieapknmfkjmkckkmfb" class="myButton">Monitorの拡張</a>
+              </li>
+              <li id="no-pro-app" class="display-hide" >
+                <a target="_blank" href="https://chrome.google.com/webstore/detail/ezcastpro/kngnopamkonohfcjpdjjecalmbifepfl" class="myButton">Projectorの拡張</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="spacer"></div>
-        <div class="title"></div>
+
+        <div class="tabby-tab">
+          <input type="radio" id="tab-2" name="tabby-tabs">
+          <label for="tab-2">手順書</label>
+          <div class="tabby-content">
+
+          </div>
+        </div>
+
+        <div class="tabby-tab">
+          <input type="radio" id="tab-3" name="tabby-tabs">
+          <label for="tab-3">問い合わせ</label>
+          <div class="tabby-content">
+
+          </div>
+        </div>
+
+        <!--<div class="tabby-tab">-->
+          <!--<input type="radio" id="tab-4" name="tabby-tabs">-->
+          <!--<label for="tab-4">Tabby Tab 4</label>-->
+          <!--<div class="tabby-content">-->
+            <!--<img src="http://i63.tinypic.com/kakc9i.png"/>-->
+            <!--<p>Use lap as chair love to play with owner's hair tie pooping rainbow while flying in a toasted bread costume in space. Run in circles loves cheeseburgers, nap all day kick up litter. Stick butt in face hide when guests come over.</p>-->
+
+          <!--</div>-->
+        <!--</div>-->
+
       </div>
     </div>
-    <div class="grid">
-      <div id="no-all-app" class="warning">
-        <i class="fa fa-times-circle"></i>
-        Wireless Projectorを利用するように、下記の拡張をインストールしてください！
-      </div>
-    </div>
-    <div id="no-4k-app" class="display-hide">
-      <a target="_blank" href="https://chrome.google.com/webstore/detail/ezcast/almaoeocffonpjieapknmfkjmkckkmfb" class="myButton">Monitorの拡張</a>
-    </div>
-    <div id="no-pro-app" class="display-hide">
-      <a target="_blank" href="https://chrome.google.com/webstore/detail/ezcastpro/kngnopamkonohfcjpdjjecalmbifepfl" class="myButton">Projectorの拡張</a>
-    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

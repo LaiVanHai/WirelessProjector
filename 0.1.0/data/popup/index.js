@@ -5,6 +5,7 @@ const item = document.querySelector('.grid-item');
 const no_all_app = document.getElementById('no-all-app');
 const no_4k_app = document.getElementById('no-4k-app');
 const no_pro_app = document.getElementById('no-pro-app');
+const section = document.getElementById('section');
 const ez_cast_4k = "EZCast";
 const ez_cast_pro = "EZCastPro";
 
