@@ -265,3 +265,13 @@ a:hover { color: tomato; }
 		margin-bottom: 10px;
 	}
 }
+
+.mac {
+  background-image: url("/data/icons/mac.png");
+  background-color: #607D8B;
+}
+
+.windows {
+  background-color: navy;
+  background-image: url("/data/icons/windows.png");
+}
