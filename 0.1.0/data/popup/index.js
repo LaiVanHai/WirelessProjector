@@ -5,7 +5,7 @@ const item = document.querySelector('.grid-item');
 const no_all_app = document.getElementById('no-all-app');
 const no_4k_app = document.getElementById('no-4k-app');
 const no_pro_app = document.getElementById('no-pro-app');
-const section = document.getElementById('section');
+const count_down = document.getElementById('count-down-time');
 const ez_cast_4k = "EZCast";
 const ez_cast_pro = "EZCastPro";
 
@@ -38,8 +38,6 @@ chrome.management.getAll(extensions => {
         ext_name_list.push(app.name);
       });
 
-      console.log(ext_name_list);
-
       let check_ezcast4k_app = ext_name_list.includes(ez_cast_4k);
       let check_ezcastpro_app = ext_name_list.includes(ez_cast_pro);
 
@@ -60,6 +58,7 @@ chrome.management.getAll(extensions => {
 
           if(app.name == ez_cast_4k || app.name == ez_cast_pro) {
             // div.style.backgroundImage = `url("${icon.url}")`;
+            count_down.style.display = 'block';
             if(app.name == ez_cast_4k) {
               div.style.backgroundImage = `url("/data/icons/monitor2.png")`;
               div.querySelector('.title').textContent = div.title = "Monitor/TV"

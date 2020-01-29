@@ -24,9 +24,16 @@
             </div>
             <div class="grid">
               <div id="no-all-app" class="warning">
-                <i class="fa fa-times-circle"></i>
                 Wireless Projectorを利用するように、下記の拡張をインストールしてください！
               </div>
+            </div>
+            <div class="count-down display-hide" id="count-down-time">
+              <img class="clock-icon display-inline" src="/data/icons/clock.png">
+              <div class="display-inline">MTGの想定時間：</div>
+              <button id="stop" class="display-hide">取消す</button>
+              <div id="inputArea">
+              </div>
+              <h1 id="time" class="display-time display-hide"></h1>
             </div>
             <ul>
               <li id="no-4k-app" class="display-hide mar_bottom" >
@@ -82,5 +89,6 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="count_down.js"></script>
   </body>
 </html>
