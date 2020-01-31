@@ -2,9 +2,11 @@ var secondsRemaining;
 var intervalHandle;
 // grab the h1
 var timeDisplay = document.getElementById("time");
+var standText = "MTGの想定時間"
+var runningText = "MTGの残る時間"
 
 function resetPage(){
-
+	document.getElementById("clock-text").innerText = standText;
 	document.getElementById("inputArea").style.display = "block";
   document.getElementById("stop").style.display = "none";
   document.getElementById("time").style.display = "none";
@@ -44,14 +46,16 @@ function startCountdown(){
 
 	function resetPage(){
 		document.getElementById("inputArea").style.display = "block";
+		document.getElementById("clock-text").innerText = standText;
 	}
 
+	document.getElementById("clock-text").innerText = runningText;
 	// get countents of the "minutes" text box
 	var minutes = document.getElementById("minutes").value;
 
 	// check if not a number
 	if (isNaN(minutes)){
-		alert("Please enter a number");
+		alert("数字を入力してください！");
 		return; // stops function if true
 	} else {
     // timeDisplay.innerHTML = "00:00";
